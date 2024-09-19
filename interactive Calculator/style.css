@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #913232;
+    margin: 0;
+}
+
+.calculator-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%; /* Set to 100% for better responsiveness */
+    max-width: 400px; /* Max width to prevent stretching */
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px; 
+    padding: 0;
+    color: #333;
+    border-bottom: 2px solid yellowgreen; 
+    padding-bottom: 10px; 
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 10px; 
+    border: 1px solid #772d2d;
+    border-radius: 5px;
+    text-align: right;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: rgb(139, 37, 37);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a5d75a; /* Slightly lighter on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px; /* Smaller font for smaller screens */
+    }
+
+    input {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    button {
+        padding: 15px; /* Smaller padding */
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+
+   
+    
+
+   
+    
